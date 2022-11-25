@@ -14,7 +14,7 @@
   border-radius: 10px;
   overflow: hidden;
 }
-.login .left {
+.login .card .left {
   overflow: hidden;
   flex: 1;
   display: flex;
@@ -24,14 +24,14 @@
   color: #FFFFFF;
   background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)), url("https://images.pexels.com/photos/12938820/pexels-photo-12938820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
 }
-.login .left h1 {
+.login .card .left h1 {
   font-size: 100px;
   line-height: 100px;
 }
-.login .left span {
+.login .card .left span {
   font-size: 14px;
 }
-.login .left button {
+.login .card .left button {
   width: 50%;
   padding: 10px;
   border: none;
@@ -41,7 +41,7 @@
   font-weight: bold;
   cursor: pointer;
 }
-.login .right {
+.login .card .right {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -49,16 +49,88 @@
   gap: 50px;
   padding: 50px;
 }
-.login .right form {
+.login .card .right form {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.login .right form input {
+.login .card .right form input {
   border: none;
   border-bottom: 1px solid lightgray;
 }
-.login .right form button {
+.login .card .right form button {
+  width: 50%;
+  font-weight: bold;
+  border: none;
+  background-color: #938eef;
+  color: #FFFFFF;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.register {
+  height: 100vh;
+  background-color: rgb(193, 190, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register .card {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse;
+  width: 50%;
+  background-color: #FFFFFF;
+  min-height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.register .card .left {
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+  color: #FFFFFF;
+  background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)), url("https://images.pexels.com/photos/4791254/pexels-photo-4791254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
+}
+.register .card .left h1 {
+  font-size: 100px;
+  line-height: 100px;
+}
+.register .card .left span {
+  font-size: 14px;
+}
+.register .card .left button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: #FFFFFF;
+  color: rebeccapurple;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.register .card .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+.register .card .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.register .card .right form input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+.register .card .right form button {
   width: 50%;
   font-weight: bold;
   border: none;
