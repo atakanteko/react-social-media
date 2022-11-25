@@ -1,10 +1,13 @@
-import Login from './pages/login/Login';
-import Register from './pages/register/Register';
+import { router } from './router/routes'
+import { 
+  RouterProvider,
+  Route 
+} from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <Register />
+      <RouterProvider router={router} />
     </div>
   );
 }

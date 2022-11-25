@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Register = () => {
     return(
         <div className="register">
@@ -8,9 +10,11 @@ const Register = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab non rerum atque porro maiores dolore enim, voluptatem qui ea dicta nisi facere dolor consequuntur est assumenda maxime nulla voluptatum laudantium.
                     </p>
                     <span>Do you have an account?</span>
-                    <button type="button">
-                        Login
-                    </button>
+                   <Link to="/login">
+                        <button type="button">
+                            Login
+                        </button>
+                   </Link>
                 </div>
                 <div className="right">
                     <h1>Register</h1>
