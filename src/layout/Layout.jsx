@@ -7,9 +7,11 @@ const Layout = () => {
     return(
         <div className="layout">
             <Navbar />
-            <div style={{ display: 'flex' }}>
+            <div className="layout-container">
                 <LeftBar />
-                <Outlet />
+                <div style={{ flex:6 }}>
+                    <Outlet />
+                </div>
                 <RightBar />
             </div>
         </div>

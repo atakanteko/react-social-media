@@ -141,7 +141,15 @@
   text-transform: uppercase;
 }
 
+.layout .layout-container {
+  display: flex;
+}
+
 .navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #ffffff;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -191,4 +199,56 @@
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.leftBar {
+  flex: 2;
+  border-right: 0.5px solid lightgray;
+}
+.leftBar .container {
+  padding: 20px;
+}
+.leftBar .container hr {
+  margin: 20px 0;
+  border: none;
+  height: 0.5px;
+  background-color: lightgrey;
+}
+.leftBar .container .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.leftBar .container .menu span {
+  font-size: 12px;
+}
+.leftBar .container .menu .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.leftBar .container .menu .user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.leftBar .container .menu .user span {
+  font-size: 14px;
+}
+.leftBar .container .menu .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.leftBar .container .menu .item img {
+  width: 30px;
+}
+.leftBar .container .menu .item span {
+  font-size: 14px;
+}
+
+.rightBar {
+  flex: 3;
+  background-color: tomato;
 }/*# sourceMappingURL=social.css.map */
