@@ -148,8 +148,8 @@
 .navbar {
   position: -webkit-sticky;
   position: sticky;
-  background-color: #ffffff;
   top: 0;
+  background-color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -202,7 +202,14 @@
 }
 .leftBar {
   flex: 2;
-  border-right: 0.5px solid lightgray;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 71px;
+  height: calc(100vh - 71px);
+  overflow: scroll;
+}
+.leftBar::-webkit-scrollbar {
+  display: none;
 }
 .leftBar .container {
   padding: 20px;
@@ -250,5 +257,12 @@
 
 .rightBar {
   flex: 3;
-  background-color: tomato;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 71px;
+  height: calc(100vh - 71px);
+  overflow: scroll;
+}
+.rightBar::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=social.css.map */
