@@ -265,4 +265,73 @@
 }
 .rightBar::-webkit-scrollbar {
   display: none;
+}
+.rightBar .container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.rightBar .container .item {
+  padding: 20px;
+}
+.rightBar .container .item span {
+  color: gray;
+}
+.rightBar .container .item .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.rightBar .container .item .user .userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rightBar .container .item .user .userInfo img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.rightBar .container .item .user .userInfo p {
+  color: gray;
+}
+.rightBar .container .item .user .userInfo span {
+  font-weight: 500;
+  color: #111111;
+  position: relative;
+}
+.rightBar .container .item .user .online .img-container {
+  display: block;
+  position: relative;
+}
+.rightBar .container .item .user .online .img-container::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(16, 255, 47);
+}
+.rightBar .container .item .user .buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rightBar .container .item .user .buttons button {
+  border: none;
+  padding: 4px 8px;
+  color: white;
+  cursor: pointer;
+}
+.rightBar .container .item .user .buttons button:first-child {
+  background-color: red;
+}
+.rightBar .container .item .user .buttons button:last-child {
+  background-color: blue;
 }/*# sourceMappingURL=social.css.map */
