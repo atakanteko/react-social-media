@@ -8,13 +8,15 @@
         &::-webkit-scrollbar{
             display: none;
         }
+        background-color: themed("bg");
+        color: themed("textColor");
         .container{
             padding: 20px;
             hr{
                 margin: 20px 0;
                 border: none;
                 height: 0.5px;
-                background-color: lightgrey;
+                background-color: themed("border");
             }
             .menu{
                 display: flex;

@@ -1,79 +1,83 @@
 .rightBar{
-    flex: 3;
-    position: sticky;
-    top: 71px;
-    height: calc(100vh - 71px);
-    overflow: scroll;
-    &::-webkit-scrollbar{
-        display: none;
-    }
-    .container{
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        .item{
+    @include themify($themes){
+        flex: 3;
+        position: sticky;
+        top: 71px;
+        height: calc(100vh - 71px);
+        overflow: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        background-color: themed("bg");
+        color: themed("textColor");
+        .container{
             padding: 20px;
-            -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
-            -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
-            box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
-            span{
-                color: gray;
-            }
-            .user{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin: 20px 0px;
-                .userInfo{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .item{
+                padding: 20px;
+                -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+                -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+                box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+                span{
+                    color: themed("textColor");
+                }
+                .user{
                     display: flex;
                     align-items: center;
-                    gap: 10px;
-                    img{
-                        width: 40px;
-                        height: 40px;
-                        object-fit: cover;
-                        border-radius: 50%;
-                    }
-                    p{
-                        color: gray;
-                    }
-                    span{
-                        font-weight: 500;
-                        color: #111111;
-                        position: relative;
-                    }
-                }
-                .online{
-                    .img-container{
-                        display: block;
-                        position: relative;
-                        &::before{
-                            position: absolute;
-                            content: '';
-                            top: 0;
-                            right: 0;
-                            width: 15px;
-                            height: 15px;
+                    justify-content: space-between;
+                    margin: 20px 0px;
+                    .userInfo{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            object-fit: cover;
                             border-radius: 50%;
-                            background-color: rgb(16, 255, 47);
+                        }
+                        p{
+                            color: themed("textColor");
+                        }
+                        span{
+                            font-weight: 500;
+                            color: themed("textColor");
+                            position: relative;
                         }
                     }
-                }
-                .buttons{
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    button{
-                        border: none;
-                        padding: 4px 8px;
-                        color: white;
-                        cursor: pointer;
-                        &:first-child{
-                            background-color: red;
+                    .online{
+                        .img-container{
+                            display: block;
+                            position: relative;
+                            &::before{
+                                position: absolute;
+                                content: '';
+                                top: 0;
+                                right: 0;
+                                width: 15px;
+                                height: 15px;
+                                border-radius: 50%;
+                                background-color: rgb(16, 255, 47);
+                            }
                         }
-                        &:last-child{
-                            background-color: blue;
+                    }
+                    .buttons{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        button{
+                            border: none;
+                            padding: 4px 8px;
+                            color: white;
+                            cursor: pointer;
+                            &:first-child{
+                                background-color: red;
+                            }
+                            &:last-child{
+                                background-color: blue;
+                            }
                         }
                     }
                 }
