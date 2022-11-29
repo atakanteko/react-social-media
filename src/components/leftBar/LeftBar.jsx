@@ -2,7 +2,7 @@ import {
     mainContent, 
     yourShortcuts,
     others
- } from "../../helper/leftBarModel";
+ } from "../../helper/model/leftBarModel";
 import UserIcon from '../../assets/images/user_icon.png'
 import Menu from "./Menu";
 

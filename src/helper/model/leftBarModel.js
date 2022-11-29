@@ -1,16 +1,16 @@
-import Image1 from '../assets/images/1.png';
-import Image2 from '../assets/images/2.png';
-import Image3 from '../assets/images/3.png';
-import Image4 from '../assets/images/4.png';
-import Image5 from '../assets/images/5.png';
-import Image6 from '../assets/images/6.png';
-import Image7 from '../assets/images/7.png';
-import Image8 from '../assets/images/8.png';
-import Image9 from '../assets/images/9.png';
-import Image10 from '../assets/images/10.png';
-import Image11 from '../assets/images/11.png';
-import Image12 from '../assets/images/12.png';
-import Image13 from '../assets/images/13.png';
+import Image1 from '../../assets/images/1.png';
+import Image2 from '../../assets/images/2.png';
+import Image3 from '../../assets/images/3.png';
+import Image4 from '../../assets/images/4.png';
+import Image5 from '../../assets/images/5.png';
+import Image6 from '../../assets/images/6.png';
+import Image7 from '../../assets/images/7.png';
+import Image8 from '../../assets/images/8.png';
+import Image9 from '../../assets/images/9.png';
+import Image10 from '../../assets/images/10.png';
+import Image11 from '../../assets/images/11.png';
+import Image12 from '../../assets/images/12.png';
+import Image13 from '../../assets/images/13.png';
 
 export const mainContent = [
     {
