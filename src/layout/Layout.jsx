@@ -5,7 +5,7 @@ import RightBar from "../components/rightBar/RightBar";
 
 const Layout = () => {
     return(
-        <div className="layout">
+        <div className="layout theme-dark">
             <Navbar />
             <div className="layout-container">
                 <LeftBar />
