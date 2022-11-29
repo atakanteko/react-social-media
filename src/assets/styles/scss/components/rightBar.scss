@@ -40,12 +40,11 @@
                             border-radius: 50%;
                         }
                         p{
-                            color: themed("textColor");
+                            color: themed("textColorSoft");
                         }
                         span{
                             font-weight: 500;
                             color: themed("textColor");
-                            position: relative;
                         }
                     }
                     .online{
