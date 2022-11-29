@@ -381,7 +381,7 @@
   top: 71px;
   height: calc(100vh - 71px);
   overflow: scroll;
-  background-color: white;
+  background-color: #f6f3f3;
   color: #000;
 }
 .theme-light .rightBar::-webkit-scrollbar {
@@ -396,6 +396,7 @@
 .theme-light .rightBar .container .item {
   padding: 20px;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+  background-color: white;
 }
 .theme-light .rightBar .container .item span {
   color: #000;
@@ -464,7 +465,7 @@
   top: 71px;
   height: calc(100vh - 71px);
   overflow: scroll;
-  background-color: #222;
+  background-color: #333;
   color: whitesmoke;
 }
 .theme-dark .rightBar::-webkit-scrollbar {
@@ -479,6 +480,7 @@
 .theme-dark .rightBar .container .item {
   padding: 20px;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+  background-color: #222;
 }
 .theme-dark .rightBar .container .item span {
   color: whitesmoke;
