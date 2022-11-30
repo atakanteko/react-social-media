@@ -4,7 +4,18 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import TextsmsIcon from '@mui/icons-material/Textsms';
 import ShareIcon from '@mui/icons-material/Share';
 import { postModel } from '../../helper/model/postModel';
+import Comments from '../comments/Comments';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 const Posts = () => {
+
+    const [isCommentSectionOpen, setIsCommentSectionOpen] = useState(false);
+
+    const toggleCommentSection = () => {
+        setIsCommentSectionOpen(!isCommentSectionOpen)
+    }
+
     return(
         postModel.map((post) =>
             <div className="posts" key={post.id}>
@@ -13,7 +24,11 @@ const Posts = () => {
                         <div className="left">
                             <img src={userIcon}/>
                             <div className='user-info'>
-                                <span>{post.name}</span>
+                                <Link 
+                                    to={`/profile/${post.userId}`}
+                                >
+                                    <span>{post.name}</span>
+                                </Link>
                                 <span>a few seconds ago</span>
                             </div>
                         </div>
@@ -30,7 +45,10 @@ const Posts = () => {
                             <FavoriteBorderIcon />
                             <span>12 Likes</span>
                         </div>
-                        <div className="item">
+                        <div 
+                            className="item"
+                            onClick={toggleCommentSection}
+                        >
                             <TextsmsIcon />
                             <span>12 Comments</span>    
                         </div>
@@ -39,6 +57,10 @@ const Posts = () => {
                             <span>12 Share</span>
                         </div>
                     </div>
+                    {
+                        isCommentSectionOpen && <Comments /> 
+                    }
+                    
                 </div>
             </div>
         )
