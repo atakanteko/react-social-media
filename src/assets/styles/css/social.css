@@ -175,6 +175,7 @@
   padding: 10px 20px;
   border-bottom: 1px solid lightgray;
   height: 50px;
+  z-index: 999;
 }
 .theme-light .navbar .left {
   display: flex;
@@ -233,6 +234,7 @@
   padding: 10px 20px;
   border-bottom: 1px solid #444;
   height: 50px;
+  z-index: 999;
 }
 .theme-dark .navbar .left {
   display: flex;
@@ -566,9 +568,6 @@
   height: 250px;
   margin-bottom: 30px;
 }
-.stories .deneme {
-  flex: 2;
-}
 .stories .story {
   flex: 1;
   border-radius: 10px;
@@ -602,4 +601,163 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.theme-light .posts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.theme-light .posts .post-item {
+  padding: 20px;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.theme-light .posts .post-item .upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.theme-light .posts .post-item .upper .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.theme-light .posts .post-item .upper .left img {
+  width: 38px;
+  height: 38px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.theme-light .posts .post-item .upper .left .user-info {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+.theme-light .posts .post-item .upper .left .user-info span {
+  font-weight: bold;
+}
+.theme-light .posts .post-item .upper .left .user-info span:first-child {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.theme-light .posts .post-item .upper .left .user-info span:last-child {
+  font-size: 12px;
+  color: #555;
+}
+.theme-light .posts .post-item .upper .right svg {
+  filter: invert(0);
+}
+.theme-light .posts .post-item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.theme-light .posts .post-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 500px;
+  width: 100%;
+}
+.theme-light .posts .post-item .interaction {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.theme-light .posts .post-item .interaction .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.theme-light .posts .post-item .interaction .item svg {
+  filter: invert(0);
+}
+.theme-light .posts .post-item .interaction .item span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+.theme-dark .posts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.theme-dark .posts .post-item {
+  padding: 20px;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+  background-color: #222;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.theme-dark .posts .post-item .upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.theme-dark .posts .post-item .upper .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.theme-dark .posts .post-item .upper .left img {
+  width: 38px;
+  height: 38px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.theme-dark .posts .post-item .upper .left .user-info {
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+}
+.theme-dark .posts .post-item .upper .left .user-info span {
+  font-weight: bold;
+}
+.theme-dark .posts .post-item .upper .left .user-info span:first-child {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.theme-dark .posts .post-item .upper .left .user-info span:last-child {
+  font-size: 12px;
+  color: lightgray;
+}
+.theme-dark .posts .post-item .upper .right svg {
+  filter: invert(1);
+}
+.theme-dark .posts .post-item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: whitesmoke;
+}
+.theme-dark .posts .post-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 500px;
+  width: 100%;
+}
+.theme-dark .posts .post-item .interaction {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.theme-dark .posts .post-item .interaction .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.theme-dark .posts .post-item .interaction .item svg {
+  filter: invert(1);
+}
+.theme-dark .posts .post-item .interaction .item span {
+  font-size: 14px;
+  font-weight: 500;
+  color: whitesmoke;
 }/*# sourceMappingURL=social.css.map */
